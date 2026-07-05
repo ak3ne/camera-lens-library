@@ -174,3 +174,45 @@ Laowa 24mm Probe & Periprobe 15-24 T8-T14 (snorkel POV *through* food/objects, d
 
 ## 7 — Speed vocabulary (pairs with any recipe)
 `completes in N seconds` · `whips in a third of a second, settles instantly` · `one decisive stroke` · `eases into a locked composition` (NOTE: video models often ignore in-prompt easing — plan the ease as a post time-remap; seedance confirmed 2/2 constant-velocity) · `holds locked, zero drift, subject motion only`.
+
+## 8 — Cinema prompt architecture (distilled from the Higgsfield Soul cinema community, 2026-07-06)
+*Source: 68-prompt corpus scraped from higgsfield.ai/soul-cinema-community (archived: `~/Altixena/studio-cyane/_references/_studies/soul-cinema-community/corpus-68-prompts.txt`). 67/68 share ONE standardized JSON template — community-proven replicable structure for hero-grade cinematic stills. Their taste cluster is A24/neo-noir; **import the ARCHITECTURE, never their mood — fill every field from YOUR project's anchors.***
+
+**The template (JSON-labeled blocks; image models parse the hierarchy):**
+```json
+{"Caption": "<4-6 sentences of FILM PROSE: time of day first, subjects, movement,
+  light behavior, camera behavior, the closing beat — a mini-treatment, not tags>",
+ "STYLE": {"Artistic Medium": "…", "Aesthetic Movement / Genre": "<with real anchors: 'A24 / …'>",
+           "Cultural / Historical Influence": "…"},
+ "COMPOSITION": {"Framing": "…", "Layout": "<GEOMETRY: triangular arrangement, receding line,
+                 leading lines, negative space>", "Perspective": "<angle + WHY: 'low to elongate legs'>"},
+ "SCENE": {"Subject Characteristics": "<age/build/wardrobe/posture — castable specificity>",
+           "Setting": "…", "Geographic / Cultural Context": "…"},
+ "CINEMATOGRAPHY_AND_LIGHTING": {"Lighting Style": "<key/fill/rim logic with color>",
+           "Color Palette": "…", "Overall Color Tone": "…", "Tone & Mood": "…"},
+ "CAMERA_AND_LENS": {"Camera Type and Era": "…", "Camera model": "…", "Lens model": "…",
+           "Lens size": "…", "Lens Effects": "<flares, breathing, edge softness>",
+           "Depth of Field": "…", "Film Grain / Noise": "<density spec: '25-35mm film density'>"},
+ "PHYSICAL_ATTRIBUTES": {"Material & Texture": "<per surface>",
+           "Physics & Effects": "<volumetrics, cloth/liquid behavior>",
+           "Execution Style": "<the in-prompt negative: 'photoreal practical, no CG'>"},
+ "HEX VALUES": ["<8-15 exact swatches — the LUT as data>"]}
+```
+
+**What this adds over our block prompts:** Caption-as-treatment opener (prose scene BEFORE spec) · WHY-clauses on composition choices · camera ERA as its own signal · lens EFFECTS as a first-class field · grain DENSITY numbers · per-surface material blocks · **the hex palette declaration**.
+
+**PALETTE-AS-DATA law:** extract the dominant swatches FROM the project's reference anchors (`PIL Image.quantize(colors=12)` → hex) and declare them in HEX VALUES — palette compliance moves from post-grade hope to GENERATION-time instruction, and feeds the keyframe gate's reference-fidelity axis directly.
+
+**Scope:** proven on cinematic STILLS (Soul community; transfers to nano banana pro / gpt-image). For VIDEO, flatten the blocks into the bible prompt (`cyane-camera.md` template) — motion models want prose blocks, not JSON.
+
+**Worked example (haidilao ① slice, client-anchor palette):**
+```json
+{"Caption": "Bright studio daylight. A hand grips a slim paring knife held perfectly vertical, its tip resting on the crown of one large glossy tomato; behind it a wall of ripe red fruit fills every corner of the frame, softly defocused. The blade waits one beat, then drives through in a single continuous stroke as fine watery spray catches the key light.",
+ "STYLE": {"Artistic Medium": "Live-action commercial food film still", "Aesthetic Movement / Genre": "High-key Chinese food TVC (Haidilao house style)", "Cultural / Historical Influence": "Contemporary CN appetite commercial"},
+ "COMPOSITION": {"Framing": "Macro close-up, hero centered", "Layout": "Hero fruit on the vertical cut axis; red wall as depth field", "Perspective": "Tabletop level to keep the blade plane readable"},
+ "SCENE": {"Subject Characteristics": "One large ripe de-stemmed tomato, taut glossy skin, water droplets", "Setting": "Edge-to-edge ripe tomato wall, no visible set hardware", "Geographic / Cultural Context": "Chinese hotpot brand world"},
+ "CINEMATOGRAPHY_AND_LIGHTING": {"Lighting Style": "High-key top softbox with white bounce fill, glossy speculars on skin", "Color Palette": "Saturated hero reds on warm highlight skin-tones", "Overall Color Tone": "Luminous poster red, zero dark voids", "Tone & Mood": "Appetizing, confident, bright"},
+ "CAMERA_AND_LENS": {"Camera Type and Era": "Contemporary digital cinema, filmic intent", "Camera model": "Phantom VEO 4K food rig", "Lens model": "100mm macro", "Lens size": "100mm at f4", "Lens Effects": "Clean modern coating, no flare", "Depth of Field": "Hero tack-sharp, wall melts", "Film Grain / Noise": "Fine broadcast grain"},
+ "PHYSICAL_ATTRIBUTES": {"Material & Texture": "Taut tomato skin with micro-droplets; brushed steel blade; matte hand skin", "Physics & Effects": "Watery juice spray as droplets under real gravity, never strings", "Execution Style": "Photoreal practical, no CG, no HDR glow, no 3D render look"},
+ "HEX VALUES": ["#8b0001", "#ab0c09", "#d62817", "#ec4229", "#f36047", "#c65641", "#d57c67", "#db8975", "#e8a694", "#6b0000"]}
+```
