@@ -1,0 +1,541 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skill",
+      "community": 0,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Camera / Lens / Lighting / LUT Library \u2014 device-truth blocks for generation prompts",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "community": 0,
+      "norm_label": "camera / lens / lighting / lut library \u2014 device-truth blocks for generation prompts"
+    },
+    {
+      "label": "How to use",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "skill_how_to_use",
+      "community": 0,
+      "norm_label": "how to use"
+    },
+    {
+      "label": "1 \u2014 CAMERAS by duty",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "skill_1_cameras_by_duty",
+      "community": 1,
+      "norm_label": "1 \u2014 cameras by duty"
+    },
+    {
+      "label": "Cinema A-camera (features / premium TVC)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "skill_cinema_a_camera_features_premium_tvc",
+      "community": 1,
+      "norm_label": "cinema a-camera (features / premium tvc)"
+    },
+    {
+      "label": "Commercial / tabletop / high-speed",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "skill_commercial_tabletop_high_speed",
+      "community": 1,
+      "norm_label": "commercial / tabletop / high-speed"
+    },
+    {
+      "label": "Broadcast / documentary / ENG",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "skill_broadcast_documentary_eng",
+      "community": 1,
+      "norm_label": "broadcast / documentary / eng"
+    },
+    {
+      "label": "Hybrid / vlog / creator",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "skill_hybrid_vlog_creator",
+      "community": 1,
+      "norm_label": "hybrid / vlog / creator"
+    },
+    {
+      "label": "Action / POV",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "skill_action_pov",
+      "community": 1,
+      "norm_label": "action / pov"
+    },
+    {
+      "label": "Phone (UGC truth)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "skill_phone_ugc_truth",
+      "community": 1,
+      "norm_label": "phone (ugc truth)"
+    },
+    {
+      "label": "Stills / photo bodies",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "skill_stills_photo_bodies",
+      "community": 1,
+      "norm_label": "stills / photo bodies"
+    },
+    {
+      "label": "Drone / aerial",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "skill_drone_aerial",
+      "community": 1,
+      "norm_label": "drone / aerial"
+    },
+    {
+      "label": "Specialty device-truth kits (each is its own realism genre)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "skill_specialty_device_truth_kits_each_is_its_own_realism_genre",
+      "community": 1,
+      "norm_label": "specialty device-truth kits (each is its own realism genre)"
+    },
+    {
+      "label": "2 \u2014 LENSES",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "skill_2_lenses",
+      "community": 2,
+      "norm_label": "2 \u2014 lenses"
+    },
+    {
+      "label": "Cine primes",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "skill_cine_primes",
+      "community": 2,
+      "norm_label": "cine primes"
+    },
+    {
+      "label": "Anamorphic",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "skill_anamorphic",
+      "community": 2,
+      "norm_label": "anamorphic"
+    },
+    {
+      "label": "Zooms",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "skill_zooms",
+      "community": 2,
+      "norm_label": "zooms"
+    },
+    {
+      "label": "Macro / probe / special",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "skill_macro_probe_special",
+      "community": 2,
+      "norm_label": "macro / probe / special"
+    },
+    {
+      "label": "Telephoto / wildlife / surveillance",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "skill_telephoto_wildlife_surveillance",
+      "community": 2,
+      "norm_label": "telephoto / wildlife / surveillance"
+    },
+    {
+      "label": "Stills classics (for photo-real keyframes)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "skill_stills_classics_for_photo_real_keyframes",
+      "community": 2,
+      "norm_label": "stills classics (for photo-real keyframes)"
+    },
+    {
+      "label": "3 \u2014 RECIPES (paste-ready; angle + framing psychology included)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "skill_3_recipes_paste_ready_angle_framing_psychology_included",
+      "community": 0,
+      "norm_label": "3 \u2014 recipes (paste-ready; angle + framing psychology included)"
+    },
+    {
+      "label": "4 \u2014 LIGHTING library (ONE motivated source statement per prompt)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "skill_4_lighting_library_one_motivated_source_statement_per_prompt",
+      "community": 0,
+      "norm_label": "4 \u2014 lighting library (one motivated source statement per prompt)"
+    },
+    {
+      "label": "Fixture spec table (name the instrument when the set is part of the story)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "skill_fixture_spec_table_name_the_instrument_when_the_set_is_part_of_the_story",
+      "community": 0,
+      "norm_label": "fixture spec table (name the instrument when the set is part of the story)"
+    },
+    {
+      "label": "5 \u2014 LUT / GRADE library (name the finish; post can still re-grade)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "skill_5_lut_grade_library_name_the_finish_post_can_still_re_grade",
+      "community": 0,
+      "norm_label": "5 \u2014 lut / grade library (name the finish; post can still re-grade)"
+    },
+    {
+      "label": "6 \u2014 Reference-anchored i2i + reverse-prompting (the overrides)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "skill_6_reference_anchored_i2i_reverse_prompting_the_overrides",
+      "community": 0,
+      "norm_label": "6 \u2014 reference-anchored i2i + reverse-prompting (the overrides)"
+    },
+    {
+      "label": "7 \u2014 Speed vocabulary (pairs with any recipe)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "skill_7_speed_vocabulary_pairs_with_any_recipe",
+      "community": 0,
+      "norm_label": "7 \u2014 speed vocabulary (pairs with any recipe)"
+    },
+    {
+      "label": "8 \u2014 Cinema prompt architecture (distilled from the Higgsfield Soul cinema community, 2026-07-06)",
+      "file_type": "document",
+      "source_file": "SKILL.md",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "skill_8_cinema_prompt_architecture_distilled_from_the_higgsfield_soul_cinema_community_2026_07_06",
+      "community": 0,
+      "norm_label": "8 \u2014 cinema prompt architecture (distilled from the higgsfield soul cinema community, 2026-07-06)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "skill",
+      "target": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_1_cameras_by_duty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_2_lenses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_3_recipes_paste_ready_angle_framing_psychology_included",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_4_lighting_library_one_motivated_source_statement_per_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_5_lut_grade_library_name_the_finish_post_can_still_re_grade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_6_reference_anchored_i2i_reverse_prompting_the_overrides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_7_speed_vocabulary_pairs_with_any_recipe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_8_cinema_prompt_architecture_distilled_from_the_higgsfield_soul_cinema_community_2026_07_06",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "skill_camera_lens_lighting_lut_library_device_truth_blocks_for_generation_prompts",
+      "target": "skill_how_to_use",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_action_pov",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_broadcast_documentary_eng",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_cinema_a_camera_features_premium_tvc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_commercial_tabletop_high_speed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_drone_aerial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_hybrid_vlog_creator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_phone_ugc_truth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_specialty_device_truth_kits_each_is_its_own_realism_genre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "skill_1_cameras_by_duty",
+      "target": "skill_stills_photo_bodies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_anamorphic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_cine_primes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_macro_probe_special",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_stills_classics_for_photo_real_keyframes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_telephoto_wildlife_surveillance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "skill_2_lenses",
+      "target": "skill_zooms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SKILL.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "skill_4_lighting_library_one_motivated_source_statement_per_prompt",
+      "target": "skill_fixture_spec_table_name_the_instrument_when_the_set_is_part_of_the_story",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "fb7c78f788f6730520a71d44a00f6e50b79a8607"
+}

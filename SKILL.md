@@ -9,6 +9,17 @@ description: Grab-and-paste library of real cameras, lenses, rigs, lighting setu
 
 **Reference override (Akane's law, 2026-07-05 round 4): when a visual reference EXISTS, don't rebuild its look from words — anchor on the image itself (i2i) and use these blocks to describe only what must CHANGE. Full protocol: `cyane-references.md` §"Reference-anchored generation".**
 
+## Position in the prompt stack (the 2026-08-02 merge)
+This file is the **VOCABULARY** layer of a three-layer system. It is not a prompt writer.
+
+| Layer | Owner | Question it answers |
+|---|---|---|
+| GRAMMAR | `prompt-master` skill (`~/Projects/prompt-master`) | how is this prompt structured, for which model, with which technique |
+| **VOCABULARY** | **this file** | which real body / lens / stop / support / light / grade buys the look |
+| LAW + EXECUTION | cyane docs + CLI (`~/Projects/cyane`) | the five laws, the bible template, the keyframe gate, what it costs |
+
+**Handoff:** when the ask is a *whole prompt* rather than a block to paste, hand structure to `prompt-master` and let it call back here to fill the blocks — its `references/cyane-stack.md` carries the routing table, the output shapes, and the pre-delivery gate. When the ask is "which camera / what lens / give me a rig block", answer straight from here. A rig recipe is not a prompt; a prompt without a real rig is not finished.
+
 ## How to use
 Pick ONE recipe (or compose body+lens+support+light+grade from the tables), paste into the prompt's Style/Camera lines, keep the rest of the prompt about subject + action. One rig per shot. Never stack two cameras. Never write "8K ultra cinematic masterpiece" — a sensor, a focal length, a T-stop, and a named light do the work. Angle + framing psychology belong IN the block (see the recipes: where the camera is, why it's there, what it can't see).
 
