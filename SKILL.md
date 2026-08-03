@@ -1,6 +1,6 @@
 ---
 name: camera-lens-library
-description: Grab-and-paste library of real cameras, lenses, rigs, lighting setups and LUT/grade looks for AI image/video generation prompts — cinema, commercial, broadcast, vlog, stills, drone, phone, surveillance. Use whenever writing generation prompts that need photographic realism (keyframes, i2v, t2v): declare a real capture device, a real light, a real grade instead of abstract "cinematic" language. Triggers: "camera settings for this shot", "what lens for", "make it look shot on real camera", "rig block", "lens recipe", "lighting block", "LUT", "grade look", keyframe prompt writing, cyane generation work.
+description: Grab-and-paste library of real cameras, lenses, rigs, lighting setups and LUT/grade looks for AI image/video generation prompts — cinema, commercial, broadcast, vlog, stills, drone, phone, surveillance. Use whenever writing generation prompts that need photographic realism (keyframes, i2v, t2v): declare a real capture device, a real light, a real grade instead of abstract "cinematic" language. Triggers: "camera settings for this shot", "what lens for", "make it look shot on real camera", "rig block", "lens recipe", "lighting block", "LUT", "grade look", "camera move", "camera works", "shot size", "shot distance", "camera angle", keyframe prompt writing, cyane generation work.
 ---
 
 # Camera / Lens / Lighting / LUT Library — device-truth blocks for generation prompts
@@ -179,6 +179,8 @@ Laowa 24mm Probe & Periprobe 15-24 T8-T14 (snorkel POV *through* food/objects, d
 
 **Era/degradation:** `90s VHS: interlace smear, chroma bleed, tape noise, 4:3` · `2000s MiniDV camcorder: sharp-harsh video, date stamp` · `2010s Instagram filter era: faded blacks, warm cast, vignette` · `8mm home movie: gate weave, dust, warm fade`.
 
+**Community-mined (2026-08-04, 158-prompt Seedance corpus + 15k photo DB):** `CCD lifestyle look: high-brightness clear CCD colors, clean white highlights, clear midtones, stable black levels, light grain, very light digital noise` · `MiniDV self-shot look: soft tape-like image quality, subtle grain, realistic auto-exposure shifts, occasional focus hunting` · `CN poetic ink palette: low-saturation jade green, ivory white and cinnabar red tones, fine film grain` · `neon MV grade: neon purple and blue cool tones, vignetting, neon halo bloom` · `motion Portra: soft Kodak Portra 400 film tone in motion, natural film grain, golden-hour warmth` · `1980s 35mm: heavy grain, vibrant yet gritty saturated colors, practical neon light glow`.
+
 ## 6 — Reference-anchored i2i + reverse-prompting (the overrides)
 1. **A reference image/frame exists → anchor on it** (nano banana pro / gpt-image-2 with `--image`): instruction = "match the reference's camera character, lens compression, filter, color grade, tone and atmosphere", then describe only the NEW content. Text-from-scratch (t2i) is for when no reference exists. Proof: haidilao round 4 — i2i on the client's own field frame beat every t2i attempt on the first roll.
 2. **Reverse-prompt the reference before writing any prompt**: read the frame/clip and extract its device block (body/lens/stop guess), light statement, grade name, atmosphere terms — using THIS library as the vocabulary — then reuse those exact terms in generation. Full protocol: `cyane-references.md` §"Reverse-prompt extraction".
@@ -227,3 +229,13 @@ Laowa 24mm Probe & Periprobe 15-24 T8-T14 (snorkel POV *through* food/objects, d
  "PHYSICAL_ATTRIBUTES": {"Material & Texture": "Taut tomato skin with micro-droplets; brushed steel blade; matte hand skin", "Physics & Effects": "Watery juice spray as droplets under real gravity, never strings", "Execution Style": "Photoreal practical, no CG, no HDR glow, no 3D render look"},
  "HEX VALUES": ["#8b0001", "#ab0c09", "#d62817", "#ec4229", "#f36047", "#c65641", "#d57c67", "#db8975", "#e8a694", "#6b0000"]}
 ```
+
+## 9 — Camera works / distance / angle atoms (the separated axes)
+
+Full database: [references/camera-works.md](references/camera-works.md) — movements, shot-distance ladder, angles, photo camera works, modifier scales, chain grammar. Distilled 2026-08-04 from a 158-prompt Seedance 2.0 community corpus (YouMind) plus a 15,089-prompt photo DB frequency pass. The STYLE axis deliberately lives elsewhere: sibling skill `style-library` (`~/Projects/style-library`). Compose per prompt: style block (style-library) + camera chain (here) + device/light/grade (this file §1-§5) + grammar (prompt-master).
+
+- **Movements:** locked-off · micro drift · push-in / pull-back · dolly · pan / whip pan · tilt · pedestal · camera roll · lateral track · follow / lead · low ground track · arc / orbit / slow 360 / orbit+ascend · zoom / snap zoom / dolly zoom · handheld intensity ladder · gimbal float · selfie cam · zero-G float · crane / jib · drone lift / flyover / top-down cathedral · FPV dive · slow motion / selective slo-mo / speed ramp / time-lapse · rack focus / focus pull · CHAINS (arrow sequences between shots)
+- **Distances:** ECU · CU · MCU · MS · cowboy · MW · FS · WS · EWS · macro, plus distance-travel written as `from [start] to [end]`
+- **Angles:** eye-level · low / extreme low · high · overhead / top-down · high-altitude descent · ground level · worm's eye · dutch · profile · three-quarter 45 · over-the-shoulder · dead-on frontal · POV
+- **Photo works:** lens+aperture recipes (85mm f/1.8 · 50mm · 35mm f/1.4 · 24mm · ultra-wide · fisheye · telephoto compression · macro · tilt-shift) · composition atoms (centered symmetry, thirds, negative space, flat lay, grid/multi-panel, framing devices, leading lines) · aspect ratios by duty
+- **LAW:** one movement per shot, chains between shots; every move declares speed + destination; a style block never smuggles a camera move, a camera atom never smuggles a mood word.

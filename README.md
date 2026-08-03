@@ -20,6 +20,7 @@ ln -sfn ~/Projects/camera-lens-library ~/.claude/skills/camera-lens-library
 - **§5 LUT / grade library** — print-film emulations, digital/broadcast grades, the food-commercial house grade, era/degradation looks
 - **§6 Reference-anchored i2i + reverse-prompting** — when a reference exists, anchor on the image; extract its device/light/grade block first
 - **§7 Speed vocabulary**
+- **§9 + `references/camera-works.md` — the separated axes** — camera movements, shot-distance ladder, angles, photo camera works, modifier scales, chain grammar; distilled 2026-08-04 from a 158-prompt Seedance 2.0 community corpus + a 15k-prompt photo DB frequency pass. The STYLE axis lives in the sibling repo [`ak3ne/style-library`](https://github.com/ak3ne/style-library) so on_one can swap style and camera independently.
 
 ## Sync contract (LAW)
 
