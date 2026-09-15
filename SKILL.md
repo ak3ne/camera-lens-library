@@ -1,6 +1,6 @@
 ---
 name: camera-lens-library
-description: Grab-and-paste library of real cameras, lenses, rigs, lighting setups and LUT/grade looks for AI image/video generation prompts — cinema, commercial, broadcast, vlog, stills, drone, phone, surveillance. Use whenever writing generation prompts that need photographic realism (keyframes, i2v, t2v): declare a real capture device, a real light, a real grade instead of abstract "cinematic" language. Triggers: "camera settings for this shot", "what lens for", "make it look shot on real camera", "rig block", "lens recipe", "lighting block", "LUT", "grade look", "camera move", "camera works", "shot size", "shot distance", "camera angle", keyframe prompt writing, cyane generation work.
+description: "Grab-and-paste library of real cameras, lenses, rigs, lighting setups and LUT/grade looks for AI image/video generation prompts — cinema, commercial, broadcast, vlog, stills, drone, phone, surveillance. Use whenever writing generation prompts that need photographic realism (keyframes, i2v, t2v): declare a real capture device, a real light, a real grade instead of abstract \"cinematic\" language. Triggers: \"camera settings for this shot\", \"what lens for\", \"make it look shot on real camera\", \"rig block\", \"lens recipe\", \"lighting block\", \"LUT\", \"grade look\", \"camera move\", \"camera works\", \"shot size\", \"shot distance\", \"camera angle\", keyframe prompt writing, cyane generation work."
 ---
 
 # Camera / Lens / Lighting / LUT Library — device-truth blocks for generation prompts
@@ -16,7 +16,7 @@ This file is the **VOCABULARY** layer of a three-layer system. It is not a promp
 |---|---|---|
 | GRAMMAR | `prompt-master` skill (`~/Projects/prompt-master`) | how is this prompt structured, for which model, with which technique |
 | **VOCABULARY** | **this file** | which real body / lens / stop / support / light / grade buys the look |
-| LAW + EXECUTION | cyane docs + CLI (`~/Projects/cyane`) | the five laws, the bible template, the keyframe gate, what it costs |
+| LAW + EXECUTION | cyane docs + CLI (`~/Projects/cyane`) | the five laws, the two video prompt shapes (【时间轴】 timed blocks · montage shot cards), the keyframe gate, what it costs |
 
 **Handoff:** when the ask is a *whole prompt* rather than a block to paste, hand structure to `prompt-master` and let it call back here to fill the blocks — its `references/cyane-stack.md` carries the routing table, the output shapes, and the pre-delivery gate. When the ask is "which camera / what lens / give me a rig block", answer straight from here. A rig recipe is not a prompt; a prompt without a real rig is not finished.
 
